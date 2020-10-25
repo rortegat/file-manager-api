@@ -1,0 +1,12 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+config:
+  file:
+    #upload-dir: /storage #For Docker container volume
+    #upload-dir: ${HOME}/storage #For non root Linux filesystem
+    upload-dir: C:\\storage # For Windows filesystem
